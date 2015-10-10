@@ -1,0 +1,64 @@
+.question {
+#	background-color: red;
+	padding-bottom: 10px;
+}
+
+.play_behavior {
+#	background-color: grey;
+	padding-bottom: 15px;
+	float: left;
+	width: 80px;
+	padding-top: 15px;
+	padding-left: 30px;
+	padding-right: 35px;
+	height: 30px;	
+}
+
+.buttons {
+#	background-color: blue;
+	height:60px;
+	padding-left:10px;
+	padding-right:10px;
+	float: left;
+}
+
+.scalestart {
+#	background-color: green;
+	float: left;
+	height: 42px;
+	padding-left: 10px;
+	padding-top: 18px;
+	padding-right: 10px;
+}
+
+.scaleend {
+#	background-color: green;
+	float: left;
+	height: 42px;	
+	padding-top: 18px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.blank {
+#	background-color: black;
+	float: none;
+	height: 80px;
+}
+
+.confirm {
+#	background-color: grey;
+	padding-bottom: 15px;
+	width: 616px;
+	padding-top: 15px;
+	padding-left: 30px;
+	padding-right: 35px;
+	height: 30px;
+	text-align: center;
+}
+
+label {
+    float: left;
+    padding: 0 1em;
+    text-align: center;
+}

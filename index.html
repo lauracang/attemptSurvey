@@ -1,0 +1,349 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+<script src="/js/functions.js"></script>
+</head>
+<body>
+
+
+<div class="question">
+	<h1>BitSurvey</h1>
+	<h2>Situation: FlexiBit feels stressed</h2>
+	<p>Click "Play" to feel each behaviour and evaluate their appropriateness for this situation.</p>
+</div><!--.question-->
+
+<div class="play_behaviour">
+	<button type="try_behaviour1" form="form1" value="Play" onclick="playBehaviour(behaviourList[0]);">1. Play</button>
+	
+</div><!--play_behaviour-->
+
+<div class="scalestart">
+Mismatch
+</div><!--scalestart-->
+
+<div class="buttons">
+	<form action="">
+		<label for="myChoice1">1<br>
+			<input type="radio" id="1" name="flexibit_stressed" value="flexibit_stressed_1">
+		</label>
+		<label for="myChoice2">2<br>
+			<input type="radio" id="flexibit_stressed_2" name="flexibit_stressed" value="flexibit_stressed_2">
+		</label>
+		<label for="myChoice3">3<br>
+			<input type="radio" id="flexibit_stressed_3" name="flexibit_stressed" value="flexibit_stressed_3">
+		</label>
+		<label for="myChoice4">4<br>
+			<input type="radio" id="flexibit_stressed_4" name="flexibit_stressed" value="flexibit_stressed_4">
+		</label>
+		<label for="myChoice4">5<br>
+			<input type="radio" id="flexibit_stressed_5" name="flexibit_stressed" value="flexibit_stressed_5">
+		</label>
+		<label for="myChoice4">6<br>
+			<input type="radio" id="flexibit_stressed_6" name="flexibit_stressed" value="flexibit_stressed_6">
+		</label>
+		<label for="myChoice4">7<br>
+			<input type="radio" id="flexibit_stressed_7" name="flexibit_stressed" value="flexibit_stressed_7">
+		</label>
+	</form>
+</div><!--#buttons-->
+
+<div class="scaleend">
+Match
+</div><!--scaleend-->
+
+<div class="blank"></div>
+
+<div class="play_behaviour">
+	<button type="try_behavior1" form="form1" value="Play" onclick="playBehaviour(behaviourList[1]);">2. Play</button>
+</div><!--play_behaviour-->
+
+<div class="scalestart">
+Mismatch
+</div><!--scalestart-->
+
+<div class="buttons">
+	<form action="">
+		<label for="myChoice1">1<br>
+			<input type="radio" id="1" name="flexibit_stressed" value="flexibit_stressed_1">
+		</label>
+		<label for="myChoice2">2<br>
+			<input type="radio" id="flexibit_stressed_2" name="flexibit_stressed" value="flexibit_stressed_2">
+		</label>
+		<label for="myChoice3">3<br>
+			<input type="radio" id="flexibit_stressed_3" name="flexibit_stressed" value="flexibit_stressed_3">
+		</label>
+		<label for="myChoice4">4<br>
+			<input type="radio" id="flexibit_stressed_4" name="flexibit_stressed" value="flexibit_stressed_4">
+		</label>
+		<label for="myChoice4">5<br>
+			<input type="radio" id="flexibit_stressed_5" name="flexibit_stressed" value="flexibit_stressed_5">
+		</label>
+		<label for="myChoice4">6<br>
+			<input type="radio" id="flexibit_stressed_6" name="flexibit_stressed" value="flexibit_stressed_6">
+		</label>
+		<label for="myChoice4">7<br>
+			<input type="radio" id="flexibit_stressed_7" name="flexibit_stressed" value="flexibit_stressed_7">
+		</label>
+	</form>
+</div><!--#single-->
+
+<div class="scaleend">
+Match
+</div><!--scaleend-->
+
+<div class="blank"></div>
+
+<div class="play_behaviour">
+	<button type="try_behavior1" form="form1" value="Play" onclick="playBehaviour(behaviourList[2]);">3. Play</button>
+</div><!--play_behaviour-->
+
+<div class="scalestart">
+Mismatch
+</div><!--scalestart-->
+
+<div class="buttons">
+	<form action="">
+		<label for="myChoice1">1<br>
+			<input type="radio" id="1" name="flexibit_stressed" value="flexibit_stressed_1">
+		</label>
+		<label for="myChoice2">2<br>
+			<input type="radio" id="flexibit_stressed_2" name="flexibit_stressed" value="flexibit_stressed_2">
+		</label>
+		<label for="myChoice3">3<br>
+			<input type="radio" id="flexibit_stressed_3" name="flexibit_stressed" value="flexibit_stressed_3">
+		</label>
+		<label for="myChoice4">4<br>
+			<input type="radio" id="flexibit_stressed_4" name="flexibit_stressed" value="flexibit_stressed_4">
+		</label>
+		<label for="myChoice4">5<br>
+			<input type="radio" id="flexibit_stressed_5" name="flexibit_stressed" value="flexibit_stressed_5">
+		</label>
+		<label for="myChoice4">6<br>
+			<input type="radio" id="flexibit_stressed_6" name="flexibit_stressed" value="flexibit_stressed_6">
+		</label>
+		<label for="myChoice4">7<br>
+			<input type="radio" id="flexibit_stressed_7" name="flexibit_stressed" value="flexibit_stressed_7">
+		</label>
+	</form>
+</div><!--#single-->
+
+<div class="scaleend">
+Match
+</div><!--scaleend-->
+
+<div class="blank"></div>
+
+<div class="play_behaviour">
+	<button type="try_behavior1" form="form1" value="Play" onclick="playBehaviour(behaviourList[3]);">4. Play</button>
+</div><!--play_behaviour-->
+
+<div class="scalestart">
+Mismatch
+</div><!--scalestart-->
+
+<div class="buttons">
+	<form action="">
+		<label for="myChoice1">1<br>
+			<input type="radio" id="1" name="flexibit_stressed" value="flexibit_stressed_1">
+		</label>
+		<label for="myChoice2">2<br>
+			<input type="radio" id="flexibit_stressed_2" name="flexibit_stressed" value="flexibit_stressed_2">
+		</label>
+		<label for="myChoice3">3<br>
+			<input type="radio" id="flexibit_stressed_3" name="flexibit_stressed" value="flexibit_stressed_3">
+		</label>
+		<label for="myChoice4">4<br>
+			<input type="radio" id="flexibit_stressed_4" name="flexibit_stressed" value="flexibit_stressed_4">
+		</label>
+		<label for="myChoice4">5<br>
+			<input type="radio" id="flexibit_stressed_5" name="flexibit_stressed" value="flexibit_stressed_5">
+		</label>
+		<label for="myChoice4">6<br>
+			<input type="radio" id="flexibit_stressed_6" name="flexibit_stressed" value="flexibit_stressed_6">
+		</label>
+		<label for="myChoice4">7<br>
+			<input type="radio" id="flexibit_stressed_7" name="flexibit_stressed" value="flexibit_stressed_7">
+		</label>
+	</form>
+</div><!--#single-->
+
+<div class="scaleend">
+Match
+</div><!--scaleend-->
+
+<div class="blank"></div>
+
+<div class="play_behaviour">
+	<button type="try_behavior1" form="form1" value="Play" onclick="playBehaviour(behaviourList[4]);">5. Play</button>
+</div><!--play_behaviour-->
+
+<div class="scalestart">
+Mismatch
+</div><!--scalestart-->
+
+<div class="buttons">
+	<form action="">
+		<label for="myChoice1">1<br>
+			<input type="radio" id="1" name="flexibit_stressed" value="flexibit_stressed_1">
+		</label>
+		<label for="myChoice2">2<br>
+			<input type="radio" id="flexibit_stressed_2" name="flexibit_stressed" value="flexibit_stressed_2">
+		</label>
+		<label for="myChoice3">3<br>
+			<input type="radio" id="flexibit_stressed_3" name="flexibit_stressed" value="flexibit_stressed_3">
+		</label>
+		<label for="myChoice4">4<br>
+			<input type="radio" id="flexibit_stressed_4" name="flexibit_stressed" value="flexibit_stressed_4">
+		</label>
+		<label for="myChoice4">5<br>
+			<input type="radio" id="flexibit_stressed_5" name="flexibit_stressed" value="flexibit_stressed_5">
+		</label>
+		<label for="myChoice4">6<br>
+			<input type="radio" id="flexibit_stressed_6" name="flexibit_stressed" value="flexibit_stressed_6">
+		</label>
+		<label for="myChoice4">7<br>
+			<input type="radio" id="flexibit_stressed_7" name="flexibit_stressed" value="flexibit_stressed_7">
+		</label>
+	</form>
+</div><!--#single-->
+
+<div class="scaleend">
+Match
+</div><!--scaleend-->
+
+<div class="blank"></div>
+
+<div class="play_behaviour">
+	<button type="try_behavior1" form="form1" value="Play" onclick="playBehaviour(behaviourList[5]);">6. Play</button>
+</div><!--play_behaviour-->
+
+<div class="scalestart">
+Mismatch
+</div><!--scalestart-->
+
+<div class="buttons">
+	<form action="">
+		<label for="myChoice1">1<br>
+			<input type="radio" id="1" name="flexibit_stressed" value="flexibit_stressed_1">
+		</label>
+		<label for="myChoice2">2<br>
+			<input type="radio" id="flexibit_stressed_2" name="flexibit_stressed" value="flexibit_stressed_2">
+		</label>
+		<label for="myChoice3">3<br>
+			<input type="radio" id="flexibit_stressed_3" name="flexibit_stressed" value="flexibit_stressed_3">
+		</label>
+		<label for="myChoice4">4<br>
+			<input type="radio" id="flexibit_stressed_4" name="flexibit_stressed" value="flexibit_stressed_4">
+		</label>
+		<label for="myChoice4">5<br>
+			<input type="radio" id="flexibit_stressed_5" name="flexibit_stressed" value="flexibit_stressed_5">
+		</label>
+		<label for="myChoice4">6<br>
+			<input type="radio" id="flexibit_stressed_6" name="flexibit_stressed" value="flexibit_stressed_6">
+		</label>
+		<label for="myChoice4">7<br>
+			<input type="radio" id="flexibit_stressed_7" name="flexibit_stressed" value="flexibit_stressed_7">
+		</label>
+	</form>
+</div><!--#single-->
+
+<div class="scaleend">
+Match
+</div><!--scaleend-->
+
+<div class="blank"></div>
+
+<div class="play_behaviour">
+	<button type="try_behavior1" form="form1" value="Play" onclick="playBehaviour(behaviourList[6]);">7. Play</button>
+</div><!--play_behaviour-->
+
+<div class="scalestart">
+Mismatch
+</div><!--scalestart-->
+
+<div class="buttons">
+	<form action="">
+		<label for="myChoice1">1<br>
+			<input type="radio" id="1" name="flexibit_stressed" value="flexibit_stressed_1">
+		</label>
+		<label for="myChoice2">2<br>
+			<input type="radio" id="flexibit_stressed_2" name="flexibit_stressed" value="flexibit_stressed_2">
+		</label>
+		<label for="myChoice3">3<br>
+			<input type="radio" id="flexibit_stressed_3" name="flexibit_stressed" value="flexibit_stressed_3">
+		</label>
+		<label for="myChoice4">4<br>
+			<input type="radio" id="flexibit_stressed_4" name="flexibit_stressed" value="flexibit_stressed_4">
+		</label>
+		<label for="myChoice4">5<br>
+			<input type="radio" id="flexibit_stressed_5" name="flexibit_stressed" value="flexibit_stressed_5">
+		</label>
+		<label for="myChoice4">6<br>
+			<input type="radio" id="flexibit_stressed_6" name="flexibit_stressed" value="flexibit_stressed_6">
+		</label>
+		<label for="myChoice4">7<br>
+			<input type="radio" id="flexibit_stressed_7" name="flexibit_stressed" value="flexibit_stressed_7">
+		</label>
+	</form>
+</div><!--#single-->
+
+<div class="scaleend">
+Match
+</div><!--scaleend-->
+
+<div class="blank"></div>
+
+<div class="play_behaviour">
+	<button type="try_behavior1" form="form1" value="Play" onclick="playBehaviour(behaviourList[7]);">8. Play</button>
+</div><!--play_behaviour-->
+
+<div class="scalestart">
+Mismatch
+</div><!--scalestart-->
+
+<div class="buttons">
+	<form action="">
+		<label for="myChoice1">1<br>
+			<input type="radio" id="1" name="flexibit_stressed" value="flexibit_stressed_1">
+		</label>
+		<label for="myChoice2">2<br>
+			<input type="radio" id="flexibit_stressed_2" name="flexibit_stressed" value="flexibit_stressed_2">
+		</label>
+		<label for="myChoice3">3<br>
+			<input type="radio" id="flexibit_stressed_3" name="flexibit_stressed" value="flexibit_stressed_3">
+		</label>
+		<label for="myChoice4">4<br>
+			<input type="radio" id="flexibit_stressed_4" name="flexibit_stressed" value="flexibit_stressed_4">
+		</label>
+		<label for="myChoice4">5<br>
+			<input type="radio" id="flexibit_stressed_5" name="flexibit_stressed" value="flexibit_stressed_5">
+		</label>
+		<label for="myChoice4">6<br>
+			<input type="radio" id="flexibit_stressed_6" name="flexibit_stressed" value="flexibit_stressed_6">
+		</label>
+		<label for="myChoice4">7<br>
+			<input type="radio" id="flexibit_stressed_7" name="flexibit_stressed" value="flexibit_stressed_7">
+		</label>
+	</form>
+</div><!--#single-->
+
+<div class="scaleend">
+Match
+</div><!--scaleend-->
+
+<div class="blank"></div>
+
+<div class="confirm">
+	<button type="confirm_behavior1" onclick="location.href='index2.html';" form="form1" value="Confirm">Confirm</button>
+</div>
+
+<script>
+  var socket = io('http://localhost:8080');
+  socket.on('news', function (data) {
+    console.log(data);
+    socket.emit('my other event', { my: 'data' });
+  });
+</script>
+</body>
+</html>

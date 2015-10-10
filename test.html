@@ -1,0 +1,53 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+<script>
+var behaviourList=["hi1", "hi2", "hi3", "hi4", "hi5", "hi6", "hi7", "hi8"]
+var socket = io('http://localhost:8080');
+
+function playBehaviour(behaviourList) {
+	socket.on('behave', function () {
+		console.log("client on");
+		socket.emit("play_behaviour",behaviourList);
+		console.log(behaviourList);
+	});
+}
+</script>
+</head>
+<body>
+
+<div class="play_behaviour">
+	<button type="try_behaviour1" form="form1" value="Play" onclick="playBehaviour(behaviourList[0]);">1. Play</button>
+</div><!--play_behaviour-->
+
+<div class="play_behaviour">
+	<button type="try_behaviour1" form="form1" value="Play" onclick="playBehaviour(behaviourList[1]);">2. Play</button>
+</div><!--play_behaviour-->
+
+<div class="play_behaviour">
+	<button type="try_behaviour1" form="form1" value="Play" onclick="playBehaviour(behaviourList[2]);">3. Play</button>
+</div><!--play_behaviour-->
+
+<div class="play_behaviour">
+	<button type="try_behaviour1" form="form1" value="Play" onclick="playBehaviour(behaviourList[3]);">4. Play</button>
+</div><!--play_behaviour-->
+
+<div class="play_behaviour">
+	<button type="try_behaviour1" form="form1" value="Play" onclick="playBehaviour(behaviourList[4]);">5. Play</button>
+</div><!--play_behaviour-->
+
+<div class="play_behaviour">
+	<button type="try_behaviour1" form="form1" value="Play" onclick="playBehaviour(behaviourList[5]);">6. Play</button>
+</div><!--play_behaviour-->
+
+<div class="play_behaviour">
+	<button type="try_behaviour1" form="form1" value="Play" onclick="playBehaviour(behaviourList[6]);">7. Play</button>
+</div><!--play_behaviour-->
+
+<div class="play_behaviour">
+	<button type="try_behaviour1" form="form1" value="Play" onclick="playBehaviour(behaviourList[7]);">8. Play</button>
+</div><!--play_behaviour-->
+
+</body>
+</html>
